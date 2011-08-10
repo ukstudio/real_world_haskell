@@ -8,3 +8,10 @@ myInfo = Book 9780135072455 "Algebra of Programming"
          ["Richard Bird", "Oege de Moor"]
 
 data BookReview = BookReview BookInfo CustomerID String
+
+type CustomerID = Int
+type ReviewBody = String
+
+data BetterReview = BetterReview BookInfo CustomerID ReviewBody
+
+type BookRecord = (BookInfo, BookReview)
