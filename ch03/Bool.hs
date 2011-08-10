@@ -1,0 +1,1 @@
+data Book = False | True
