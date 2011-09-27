@@ -1,4 +1,8 @@
-mySecond :: [a] -> a
+mySecond :: [a] -> Maybe a
 mySecond xs = if null (tail xs)
-              then error("list to short")
-              else head(tail xs)
+              then Nothing
+              else Just(head(tail xs))
+
+tidySecond :: [a] -> Maybe a
+tidySecond (_:x:_) = Just x
+tidySecond _	   = Nothing
