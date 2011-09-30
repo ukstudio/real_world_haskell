@@ -10,3 +10,7 @@ whichFruit f = case f of
 
 equational apple = Apple
 equational orange = Orange
+
+betterFruit f = case f of
+                    "apple" -> Apple
+                    "orange" -> Orange
